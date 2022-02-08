@@ -1,0 +1,13 @@
+<div class="cabecera">
+    <h2>Lista de tareas</h2>
+    <label for="tarea">Tarea: </label>
+    <input type="text" [(ngModel)]="tarea" (keyup.enter)="agregar()" name="tarea"/><br><br>
+    <label for="prioridad">Prioridad: </label>
+    <select [(ngModel)]="prioridad" name="prioridad">
+        <option disabled value="">-----</option>
+        <option>1 <!--Alta--></option>
+        <option>2 <!--Media--></option>
+        <option>3 <!--Baja--></option>
+    </select><br><br>
+    <button [disabled]="prioridad=='' || tarea==''" (click)="agregar()">Añadir tarea</button>
+</div>

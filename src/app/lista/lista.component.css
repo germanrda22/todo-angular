@@ -1,0 +1,52 @@
+div ul{
+    list-style: none;
+}
+
+div ul li #marcador{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;;
+}
+
+.normal{
+    margin: auto;
+    background: red;
+    opacity: 70%;
+    border-radius: 22px;
+}
+
+.completada{
+    margin: auto;
+    background: green;
+    opacity: 70%;
+    border-radius: 22px;
+    text-decoration: line-through;
+}
+
+#check{
+    height: 20px;
+    width: 20px;
+}
+
+#delete{
+    height: 20px;
+    width: 20px;
+}
+
+.tareas{
+    margin: auto;
+    width: 60%;
+    border-radius: 22px;
+    opacity: 80%;
+}
+
+.footer{
+    padding-top: 20px;
+    margin: auto;
+    background: yellow;
+    height: 100px;
+    width: 60%;
+    border-radius: 22px;
+    opacity: 80%;
+}

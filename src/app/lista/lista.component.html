@@ -1,0 +1,21 @@
+<div class="tareas" *ngFor="let tarea of listatareas.tareas; let i=index" [ngClass]="{normal:!tarea.estado, completada:tarea.estado}">
+    <ul>
+        <li>
+            Tarea: {{tarea.tarea}}<br>
+            Prioridad: {{tarea.prioridad}}<br>
+            {{tarea.fecha}}<br>
+        </li>
+        <button (click)="listatareas.aumentarPrioridad(i)">Aumentar prioridad</button>
+        <button (click)="listatareas.disminuirPrioridad(i)">Disminuir prioridad</button><br>
+        <button (click)="listatareas.cambiarEstado(i)"><img src="../../assets/check.png" id="check" alt="check"></button>
+        <button (click)="listatareas.borrar(i)"><img src="../../assets/delete.png" id="delete" alt="delete"></button>
+    </ul>
+</div>
+<div class="footer">
+    <button (click)="listatareas.mostrarCompletadas()">Tareas completadas</button>
+    <button (click)="listatareas.mostrarIncompletadas()">Tareas incompletadas</button>
+    <button (click)="listatareas.mostrarTodas()">Mostrar todas</button><br>
+    <button (click)="listatareas.borrarCompletadas()">Borrar completadas</button>
+    <button (click)="listatareas.borrarTodas()">Eliminar todas</button>
+    <h4>Tienes {{listatareas.tareas.length}} tareas, de las cuales {{listatareas.porhacer()}} están pendientes</h4>
+</div>

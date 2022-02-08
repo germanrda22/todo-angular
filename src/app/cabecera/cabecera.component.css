@@ -1,0 +1,11 @@
+.cabecera{
+    margin: auto;
+    background: violet;
+    height: 155px;
+    width: 60%;
+    border-radius: 22px;
+    opacity: 75%;
+    color: white;
+    margin-bottom: 10px;
+    z-index: 2;
+}

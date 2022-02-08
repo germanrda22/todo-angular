@@ -1,0 +1,10 @@
+header{
+    height: 220px;
+    width: 100%;
+}
+
+header img{
+    height: 220px;
+    width: 60%;
+    border-radius: 20px;
+}
